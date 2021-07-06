@@ -1,6 +1,6 @@
 // @dart=2.9
 import 'package:flutter/material.dart';
-import 'package:shahen/stateful/rate.dart';
+import 'package:shahen/stateless/rate.dart';
 import 'package:sizer/sizer.dart';
 
 void main() => runApp(MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(
         builder: (context, orientation, deviceType) {
-          return MaterialApp(
+          return const MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Flutter Google Maps Demo',
             home: DriverRate(),

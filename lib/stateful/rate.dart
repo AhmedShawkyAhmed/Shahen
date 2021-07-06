@@ -15,7 +15,7 @@ class _DriverRateState extends State<DriverRate> {
   static const LatLng _kMapCenter = LatLng(30.045072, 31.196334);
 
   static const CameraPosition _kInitialPosition =
-      CameraPosition(target: _kMapCenter, zoom: 11.0, tilt: 0, bearing: 0);
+      CameraPosition(target: _kMapCenter, zoom: 19.0, tilt: 0, bearing: 0);
 
   @override
   Widget build(BuildContext context) {

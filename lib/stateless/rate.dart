@@ -5,17 +5,12 @@ import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:shahen/colors.dart';
 import 'package:sizer/sizer.dart';
 
-// ignore: use_key_in_widget_constructors
-class DriverRate extends StatefulWidget {
-  @override
-  _DriverRateState createState() => _DriverRateState();
-}
-
-class _DriverRateState extends State<DriverRate> {
+class DriverRate extends StatelessWidget {
+  const DriverRate({Key key}) : super(key: key);
   static const LatLng _kMapCenter = LatLng(30.045072, 31.196334);
 
   static const CameraPosition _kInitialPosition =
-      CameraPosition(target: _kMapCenter, zoom: 19.0, tilt: 0, bearing: 0);
+  CameraPosition(target: _kMapCenter, zoom: 19.0, tilt: 0, bearing: 0);
 
   @override
   Widget build(BuildContext context) {
@@ -29,9 +24,11 @@ class _DriverRateState extends State<DriverRate> {
           title: 'قيم السائق',
           style: AlertStyle(
             alertPadding: const EdgeInsets.all(20),
-            titleStyle: const TextStyle(
-              fontSize: 30,
-              color: AppColor.black
+            titleStyle: TextStyle(
+              fontSize: 20,
+              fontFamily: 'Careem',
+              fontWeight: FontWeight.normal,
+              color: AppColor.black.withOpacity(0.6),
             ),
             overlayColor: Colors.white.withOpacity(0.0),
           ),
@@ -118,6 +115,8 @@ class _DriverRateState extends State<DriverRate> {
                           style: TextStyle(
                             color: AppColor.black,
                             fontSize: 20,
+                            fontFamily: 'Roboto',
+                            fontWeight: FontWeight.normal,
                           ),
                         ),
                         Text(
@@ -128,10 +127,12 @@ class _DriverRateState extends State<DriverRate> {
                           ),
                         ),
                         Text(
-                          'ا ح ف 564',
+                          'ا ح ف ٥٦٤',
                           style: TextStyle(
                             color: AppColor.black,
                             fontSize: 15,
+                            fontFamily: 'Roboto',
+                            fontWeight: FontWeight.normal,
                           ),
                         ),
                       ],
@@ -150,7 +151,9 @@ class _DriverRateState extends State<DriverRate> {
                 "إنهاء",
                 style: TextStyle(
                   color: AppColor.white,
-                  fontSize: 25,
+                  fontSize: 20,
+                  fontFamily: 'Careem',
+                  fontWeight: FontWeight.normal,
                 ),
               ),
               color: AppColor.orange,
@@ -161,3 +164,4 @@ class _DriverRateState extends State<DriverRate> {
     );
   }
 }
+

@@ -6,7 +6,7 @@ import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:shahen/colors.dart';
 import 'package:sizer/sizer.dart';
 
-class DriverRate extends StatelessWidget {
+class DriverRate extends StatefulWidget {
   const DriverRate({Key key}) : super(key: key);
   static const LatLng _kMapCenter = LatLng(30.045072, 31.196334);
 
@@ -14,10 +14,15 @@ class DriverRate extends StatelessWidget {
   CameraPosition(target: _kMapCenter, zoom: 19.0, tilt: 0, bearing: 0);
 
   @override
+  State<DriverRate> createState() => _DriverRateState();
+}
+
+class _DriverRateState extends State<DriverRate> {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: const GoogleMap(
-        initialCameraPosition: _kInitialPosition,
+        initialCameraPosition: DriverRate._kInitialPosition,
       ),
       floatingActionButton: FloatingActionButton(
           backgroundColor: AppColor.black.withOpacity(0.5),

@@ -11,7 +11,7 @@ class DriverRate extends StatelessWidget {
   static const LatLng _kMapCenter = LatLng(30.045072, 31.196334);
 
   static const CameraPosition _kInitialPosition =
-      CameraPosition(target: _kMapCenter, zoom: 19.0, tilt: 0, bearing: 0);
+  CameraPosition(target: _kMapCenter, zoom: 19.0, tilt: 0, bearing: 0);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class DriverRate extends StatelessWidget {
         initialCameraPosition: _kInitialPosition,
       ),
       floatingActionButton: FloatingActionButton(
-          backgroundColor: AppColor.white.withOpacity(0.0),
+          backgroundColor: AppColor.black.withOpacity(0.5),
           onPressed: () {
             Alert(
               context: context,
@@ -51,7 +51,7 @@ class DriverRate extends StatelessWidget {
                         allowHalfRating: true,
                         itemCount: 5,
                         itemPadding:
-                            const EdgeInsets.symmetric(horizontal: 4.0),
+                        const EdgeInsets.symmetric(horizontal: 4.0),
                         itemBuilder: (context, _) => const Icon(
                           Icons.star,
                           color: Colors.amber,

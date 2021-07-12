@@ -2,7 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 import 'package:easy_localization/easy_localization.dart';
 
-class AddOrder extends StatelessWidget {
+class AddOrder extends StatefulWidget {
+  const AddOrder({required Key key}) : super(key: key);
+
+  @override
+  State<AddOrder> createState() => _AddOrderState();
+}
+
+class _AddOrderState extends State<AddOrder> {
   @override
   Widget build(BuildContext context) {
     return Sizer(

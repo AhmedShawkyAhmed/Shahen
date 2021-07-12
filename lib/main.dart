@@ -2,9 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:shahen/stateful/add_request.dart';
 import 'package:shahen/stateful/my_orders.dart';
 import 'package:shahen/stateful/rate.dart';
 import 'package:shahen/stateless/applocalization.dart';
+import 'package:sizer/sizer.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,32 +24,35 @@ class _MyAppState extends State<MyApp> {
         statusBarColor: Colors.white,
         statusBarBrightness: Brightness.dark,
         statusBarIconBrightness: Brightness.dark));
-    return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily: 'Careem',
-        scaffoldBackgroundColor: Colors.white,
-      ),
-      supportedLocales: const [
-        Locale('ar'),
-        Locale('en'),
-      ],
-      localizationsDelegates: [
-        AppLocalization.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ],
-      localeResolutionCallback: (locale, supportedLocales) {
-        for (var supportedLocale in supportedLocales) {
-          if (supportedLocale.languageCode == locale!.languageCode &&
-              supportedLocale.countryCode == locale.countryCode) {
-            return supportedLocale;
+    return Sizer(builder:
+        (BuildContext context, Orientation orientation, DeviceType deviceType) {
+      return MaterialApp(
+        title: 'Flutter Demo',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          fontFamily: 'Careem',
+          scaffoldBackgroundColor: Colors.white,
+        ),
+        supportedLocales: const [
+          Locale('ar'),
+          Locale('en'),
+        ],
+        localizationsDelegates: [
+          AppLocalization.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+        ],
+        localeResolutionCallback: (locale, supportedLocales) {
+          for (var supportedLocale in supportedLocales) {
+            if (supportedLocale.languageCode == locale!.languageCode &&
+                supportedLocale.countryCode == locale.countryCode) {
+              return supportedLocale;
+            }
+            return supportedLocales.first;
           }
-          return supportedLocales.first;
-        }
-      },
-      home: const DriverRate(),
-    );
+        },
+        home: addRequest(),
+      );
+    });
   }
 }

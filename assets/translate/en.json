@@ -1,0 +1,13 @@
+{
+  "driver_name": "Driver Name",
+  "type": "Type",
+  "car": "Transport",
+  "order_status": "Order Type",
+  "wait": "wait",
+  "fridge": "Fridge",
+  "name": "Driver Name",
+  "car_num": "Car Number",
+  "distance": "Distance",
+  "location": "Location",
+  "cost": "Cost"
+}

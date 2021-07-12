@@ -34,7 +34,7 @@ class _MyAppState extends State<MyApp> {
           fontFamily: 'Careem',
           scaffoldBackgroundColor: Colors.white,
         ),
-        supportedLocales:  [
+        supportedLocales: [
           Locale('en', 'US'),
           Locale('ar', 'EG'),
         ],

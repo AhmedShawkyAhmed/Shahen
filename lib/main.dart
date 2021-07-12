@@ -27,15 +27,16 @@ class _MyAppState extends State<MyApp> {
     return Sizer(builder:
         (BuildContext context, Orientation orientation, DeviceType deviceType) {
       return MaterialApp(
+        home: addRequest(),
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           fontFamily: 'Careem',
           scaffoldBackgroundColor: Colors.white,
         ),
-        supportedLocales: const [
-          Locale('ar'),
-          Locale('en'),
+        supportedLocales:  [
+          Locale('en', 'US'),
+          Locale('ar', 'EG'),
         ],
         localizationsDelegates: [
           AppLocalization.delegate,
@@ -51,7 +52,6 @@ class _MyAppState extends State<MyApp> {
           }
           return supportedLocales.first;
         },
-        home: addRequest(),
       );
     });
   }

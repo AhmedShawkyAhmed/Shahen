@@ -20,7 +20,7 @@ class AppLocalization {
 
   Future<bool> load() async {
     String jsonString = await rootBundle.loadString(
-        'assets/lang/${locale.languageCode}.json');
+        'assets/translate/${locale.languageCode}.json');
 
     Map<String, dynamic> jsonMap = json.decode(jsonString);
 

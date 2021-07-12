@@ -48,8 +48,8 @@ class _MyAppState extends State<MyApp> {
                 supportedLocale.countryCode == locale.countryCode) {
               return supportedLocale;
             }
-            return supportedLocales.first;
           }
+          return supportedLocales.first;
         },
         home: addRequest(),
       );

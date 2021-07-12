@@ -1,13 +1,21 @@
 {
-  "driver_name": "أسم السائق",
-  "type": "نوع الشاحنة",
-  "car": "نقل",
-  "order_status": "حالة الطلب",
-  "wait": "إنتظار",
-  "fridge": "عربة ثلاجة",
-  "name": "إسم السائق",
-  "car_num": "رقم العربة",
-  "distance": "المسافة",
-  "location": "الموقع",
-  "cost": "التكلفة"
+  "main":"الرئيسية",
+  "my_orders":"طلباتى",
+  "notifications":"الإشعارات",
+  "account":"الحساب",
+  "settings":"الإعدادات",
+  "order_number":"طلب رقم ١٧٢٥٦",
+  "from":"من",
+  "cairo":"القاهرة",
+  "yesterday": "أمس",
+  "to": "إلى",
+  "ismailia": "الإسماعيلية",
+  "time": "الوقت",
+  "two_hours": "ساعتين",
+  "truck": "الشاحنة",
+  "food_delivery": "نقل طعام",
+  "order_cost": "تكلفة الطلب",
+  "price": "200 \\$",
+  "waiting": "إنتظار"
+
 }

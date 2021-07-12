@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:untitled/app_localization.dart';
-import 'package:untitled/stateful/my_orders.dart';
+import 'package:shahen/app_localization.dart';
+import 'package:shahen/stateful/my_orders.dart';
 
 
 void main()  {
@@ -20,7 +20,7 @@ class _MyAppState extends State<MyApp> {
 
 
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
         statusBarColor: Colors.white,
         statusBarBrightness:Brightness.dark,statusBarIconBrightness: Brightness.dark));
     return MaterialApp(
@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
           fontFamily: 'Careem',
         scaffoldBackgroundColor: Colors.white,
       ),
-supportedLocales: [
+supportedLocales: const [
   Locale('ar'),
   Locale('en'),
 ],
@@ -49,7 +49,7 @@ GlobalWidgetsLocalizations.delegate,
           return supportedLocales.first;
         }
       },
-      home: MyOrders(),
+      home: const MyOrders(),
     );
   }
   }

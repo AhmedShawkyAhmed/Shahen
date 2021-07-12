@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:task/translate/locale_keys.g.dart';
+import 'package:shahen/translate/locale_keys.g.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class DriverDetails extends StatelessWidget {
-  //const DriverDetails({Key? key}) : super(key: key);
+  const DriverDetails({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class DriverDetails extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        CircleAvatar(
+                        const CircleAvatar(
                           radius: 40,
                           backgroundImage: NetworkImage(
                               'https://banner2.cleanpng.com/20180718/shx/kisspng-client-portal-service-organization-advertising-man-mobile-with-hand-5b4f27f8391687.9090013715319142322339.jpg'),
@@ -41,7 +41,7 @@ class DriverDetails extends StatelessWidget {
                           children: [
                             Text(LocaleKeys.driver_name.tr(),
                                 //'أسم السائق',
-                                style: TextStyle(
+                                style: const TextStyle(
                                     fontSize: 15, fontWeight: FontWeight.bold)),
                             SizedBox(
                               height: constraint.maxHeight * 0.001,
@@ -50,26 +50,25 @@ class DriverDetails extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.start,
                              // textDirection: TextDirection.rtl,
                               children: [
-                                Text(
+                                const Text(
                                   '4',
                                   style: TextStyle(fontSize: 10),
                                 ),
                                 SizedBox(
                                   width: constraint.maxWidth * 0.01,
                                 ),
-                                RatingBar(
+                                RatingBar.builder(
                                   initialRating: 4,
                                   itemSize: 8,
                                   direction: Axis.horizontal,
                                   allowHalfRating: true,
                                   itemCount: 5,
                                   itemPadding:
-                                      EdgeInsets.symmetric(horizontal: 2.0),
-                                  itemBuilder: (context, _) => Icon(
+                                  const EdgeInsets.symmetric(horizontal: 2.0),
+                                  itemBuilder: (context, _) => const Icon(
                                     Icons.circle,
                                     color: Colors.black,
-                                  ),
-                                  onRatingUpdate: null,
+                                  ), onRatingUpdate: (value) { print(value); },
                                 ),
 
                               ],
@@ -84,28 +83,28 @@ class DriverDetails extends StatelessWidget {
                                 Text(LocaleKeys.car.tr(),
                                   //  'نقل'
 
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                         fontSize: 12,)),
                                 SizedBox(
                                   width: constraint.maxWidth * 0.01,
                                 ),
                                 Text(LocaleKeys.type.tr(),
                                     //'نوع الشاحنة',
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontSize: 12,)),
                               ],
                             ),
                             SizedBox(
                               height: constraint.maxHeight * 0.001,
                             ),
-                            Text('أ ف ح 564',
+                            const Text('أ ف ح 564',
                                 style: TextStyle(
                                   fontSize: 12,)),
 
                           ],
                         ),
-                        Spacer(),
-                        Icon(
+                        const Spacer(),
+                        const Icon(
                           Icons.phone,
                           color: Colors.green,
                           size: 40,
@@ -115,7 +114,7 @@ class DriverDetails extends StatelessWidget {
                     SizedBox(
                       height: constraint.maxHeight * 0.01,
                     ),
-                    Divider(thickness: 1.2,),
+                    const Divider(thickness: 1.2,),
                     SizedBox(
                       height: constraint.maxHeight * 0.001,
                     ),
@@ -124,18 +123,18 @@ class DriverDetails extends StatelessWidget {
                       children: [
                         Text(LocaleKeys.order_status.tr(),
                             //'حالة الطلب',
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 15,)),
-                        Spacer(),
+                        const Spacer(),
                         Column(
                           children: [
                             Text(LocaleKeys.wait.tr(),
                                 //'إنتظار',
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 12 ,color: Colors.amber,)),
                             Text(LocaleKeys.fridge.tr(),
                                 //'عربة تلاجة',
-                                style: TextStyle(
+                                style: const TextStyle(
                                   decoration: TextDecoration.overline,decorationStyle: TextDecorationStyle.solid,
                                     fontSize: 12 ,)),
                           ],
@@ -152,7 +151,7 @@ class DriverDetails extends StatelessWidget {
                       children: [
                         Text(LocaleKeys.driver_name.tr(),
                             //'إسم السواق',
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.amber,
                               fontSize: 10 ,)),
                         SizedBox(
@@ -165,7 +164,7 @@ class DriverDetails extends StatelessWidget {
                             borderRadius: BorderRadius.circular(10),
                             color: Colors.amber
                           ),
-                          child: Center(child: Text('alsaid hamdy')),
+                          child: const Center(child: Text('alsaid hamdy')),
                         ),
                       ],
                     ),
@@ -177,7 +176,7 @@ class DriverDetails extends StatelessWidget {
                       children: [
                         Text(LocaleKeys.car_num.tr(),
                             //'رقم العربة',
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.amber,
                               fontSize: 10 ,)),
                         SizedBox(
@@ -190,7 +189,7 @@ class DriverDetails extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.amber
                           ),
-                          child: Center(child: Text('998877665544')),
+                          child: const Center(child: Text('998877665544')),
                         ),
                       ],
                     ),
@@ -202,7 +201,7 @@ class DriverDetails extends StatelessWidget {
                       children: [
                         Text(LocaleKeys.distance.tr(),
                             //'المسافة',
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.amber,
                               fontSize: 10 ,)),
                         SizedBox(
@@ -215,7 +214,7 @@ class DriverDetails extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.amber
                           ),
-                          child: Center(child: Text('220 KM')),
+                          child: const Center(child: Text('220 KM')),
                         ),
                       ],
                     ),
@@ -227,7 +226,7 @@ class DriverDetails extends StatelessWidget {
                       children: [
                         Text(LocaleKeys.location.tr(),
                             //'موقع الطلب',
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.amber,
                               fontSize: 10 ,)),
                         SizedBox(
@@ -240,7 +239,7 @@ class DriverDetails extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.amber
                           ),
-                          child: Center(child: Text('NasrCity - Cairo - Egypt',style: TextStyle(fontSize: 10),)),
+                          child: const Center(child: Text('NasrCity - Cairo - Egypt',style: TextStyle(fontSize: 10),)),
                         ),
                       ],
                     ),
@@ -252,7 +251,7 @@ class DriverDetails extends StatelessWidget {
                       children: [
                         Text(LocaleKeys.cost.tr(),
                             //'التكلفة',
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.amber,
                               fontSize: 12 ,)),
                         SizedBox(
@@ -266,7 +265,7 @@ class DriverDetails extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.amber
                           ),
-                          child: Center(child: Text('500 \$')),
+                          child: const Center(child: Text('500 \$')),
                         ),
                       ],
                     ),

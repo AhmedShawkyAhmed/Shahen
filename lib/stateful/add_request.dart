@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sha7n_tech/appLocalization.dart';
-import 'package:sha7n_tech/colors.dart';
-import 'package:sha7n_tech/components/components.dart';
+import 'package:shahen/colors.dart';
+import 'package:shahen/stateful/components.dart';
+import 'package:shahen/stateless/appLocalization.dart';
 import 'package:sizer/sizer.dart';
 
 class addRequest extends StatefulWidget {
@@ -19,7 +19,7 @@ class _addRequestState extends State<addRequest> {
       appBar: AppBar(
         centerTitle: true,
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back,
             color: AppColor.orange,
           ),
@@ -31,7 +31,7 @@ class _addRequestState extends State<addRequest> {
         elevation: 0,
         title: Text(
           AppLocalization.of(context)!.translate('add_request').toString(),
-          style: TextStyle(
+          style: const TextStyle(
               fontFamily: "Careem",
               fontWeight: FontWeight.bold,
               fontSize: 25,

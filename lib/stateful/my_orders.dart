@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/app_localization.dart';
-import 'package:untitled/color.dart';
-import 'package:untitled/stateless/my_orders_item.dart';
+import 'package:shahen/app_localization.dart';
+import 'package:shahen/colors.dart';
+import 'package:shahen/stateless/my_orders_item.dart';
 
 class MyOrders extends StatefulWidget {
   const MyOrders({Key? key}) : super(key: key);
@@ -26,11 +26,11 @@ class _MyOrdersState extends State<MyOrders> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
-        backgroundColor: AppColors.white,
-        selectedItemColor: AppColors.orange,
-        selectedIconTheme: AppColors.orangeIcon,
-        unselectedIconTheme: AppColors.lightGrayIcon,
-        unselectedItemColor: AppColors.lightGray,
+        backgroundColor: AppColor.white,
+        selectedItemColor: AppColor.orange,
+        selectedIconTheme: AppColor.orangeIcon,
+        unselectedIconTheme: AppColor.lightGrayIcon,
+        unselectedItemColor: AppColor.lightGray,
         showUnselectedLabels: true,
         items: [
           BottomNavigationBarItem(

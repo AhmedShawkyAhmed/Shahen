@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:task/stateless/driver_details.dart';
+import 'package:shahen/stateless/driver_details.dart';
 
 class GoogleMapss extends StatefulWidget {
 

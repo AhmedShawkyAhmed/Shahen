@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sha7n_tech/colors.dart';
+import 'package:shahen/colors.dart';
 import 'package:sizer/sizer.dart';
 
 Widget tffItem({

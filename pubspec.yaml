@@ -73,7 +73,7 @@ flutter:
     - assets/
 
   fonts:
-    - family: Janna_LT_Bold
+    - family: Careem
       fonts:
         - asset: fonts/ArbFONTS-CAREEM-REGULAR.DB5F2BCA26992ED25A89.otf
           weight: 200

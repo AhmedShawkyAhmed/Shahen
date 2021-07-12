@@ -1,22 +1,56 @@
-// @dart=2.9
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:shahen/stateful/rate.dart';
-import 'package:sizer/sizer.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:untitled/app_localization.dart';
+import 'package:untitled/stateful/my_orders.dart';
 
-void main() => runApp(MyApp());
 
-// ignore: use_key_in_widget_constructors
-class MyApp extends StatelessWidget {
+void main()  {
+runApp(MyApp());
+}
+
+class MyApp extends StatefulWidget {
   @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+
+
   Widget build(BuildContext context) {
-    return Sizer(
-        builder: (context, orientation, deviceType) {
-          return const MaterialApp(
-            debugShowCheckedModeBanner: false,
-            title: 'Flutter Google Maps Demo',
-            home: DriverRate(),
-          );
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+        statusBarColor: Colors.white,
+        statusBarBrightness:Brightness.dark,statusBarIconBrightness: Brightness.dark));
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+          fontFamily: 'Careem',
+        scaffoldBackgroundColor: Colors.white,
+      ),
+supportedLocales: [
+  Locale('ar'),
+  Locale('en'),
+],
+localizationsDelegates: [
+  AppLocalization.delegate,
+GlobalMaterialLocalizations.delegate,
+GlobalWidgetsLocalizations.delegate,
+],
+      localeResolutionCallback: (locale,supportedLocales){
+        for( var supportedLocale in supportedLocales){
+          if(supportedLocale.languageCode == locale!.languageCode &&
+              supportedLocale.countryCode == locale.countryCode
+          ){
+            return supportedLocale;
+          }
+          return supportedLocales.first;
         }
+      },
+      home: MyOrders(),
     );
   }
-}
+  }
+

@@ -70,8 +70,8 @@ class _DriverRateState extends State<DriverRate> {
                     height: 25,
                   ),
                   Container(
-                    height: 100,
-                    width: 100,
+                    height: 16.h,
+                    width: 100.w,
                     decoration: const BoxDecoration(
                       border: Border(
                         top: BorderSide(
@@ -90,8 +90,8 @@ class _DriverRateState extends State<DriverRate> {
                           child: Image.asset(
                             'assets/person.png',
                             fit: BoxFit.fill,
-                            height: 40,
-                            width: 40,
+                            height: 12.h,
+                            width: 12.h,
                           ),
                         ),
                         const SizedBox(
@@ -135,7 +135,7 @@ class _DriverRateState extends State<DriverRate> {
               ),
               buttons: [
                 DialogButton(
-                  width: 100,
+                  width: 65.w,
                   radius: const BorderRadius.all(Radius.circular(30)),
                   onPressed: () {},
                   child: const Text(

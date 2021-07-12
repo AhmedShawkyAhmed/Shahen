@@ -57,9 +57,10 @@ class _addRequestState extends State<addRequest> {
                 child: Material(
                   elevation: 6,
                   borderRadius: BorderRadius.circular(20),
-                  shadowColor: AppColor.greyPale,
+                  shadowColor: AppColor.lightGray,
                   child: TextField(
                     maxLines: 24,
+                    
                     decoration: InputDecoration(
                       hintText: AppLocalization.of(context)!
                           .translate("describe_positive")

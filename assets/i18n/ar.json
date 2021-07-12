@@ -236,6 +236,26 @@
   "receiver_phone":"هاتف المستلم",
   "request_cost":"تكلفه الطلب",
   "continue": "استمرار",
-  "receiver": "انا المتلقي"
+  "receiver": "انا المتلقي",
+
+  "main":"الرئيسية",
+  "my_orders":"طلباتى",
+  "notifications":"الإشعارات",
+  "account":"الحساب",
+  "settings":"الإعدادات",
+  "order_number":"طلب رقم ١٧٢٥٦",
+  "from":"من",
+  "cairo":"القاهرة",
+  "yesterday": "أمس",
+  "to": "إلى",
+  "ismailia": "الإسماعيلية",
+  "time": "الوقت",
+  "two_hours": "ساعتين",
+  "truck": "الشاحنة",
+  "food_delivery": "نقل طعام",
+  "order_cost": "تكلفة الطلب",
+  "price": "200 \\$",
+  "waiting": "إنتظار"
+
 
 }

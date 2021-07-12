@@ -1,4 +1,3 @@
-// @dart=2.9
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -7,7 +6,7 @@ import 'package:shahen/colors.dart';
 import 'package:sizer/sizer.dart';
 
 class DriverRate extends StatefulWidget {
-  const DriverRate({Key key}) : super(key: key);
+  const DriverRate({Key? key}) : super(key: key);
   static const LatLng _kMapCenter = LatLng(30.045072, 31.196334);
 
   static const CameraPosition _kInitialPosition =
@@ -71,8 +70,8 @@ class _DriverRateState extends State<DriverRate> {
                     height: 25,
                   ),
                   Container(
-                    height: 16.h,
-                    width: 100.w,
+                    height: 100,
+                    width: 100,
                     decoration: const BoxDecoration(
                       border: Border(
                         top: BorderSide(
@@ -91,8 +90,8 @@ class _DriverRateState extends State<DriverRate> {
                           child: Image.asset(
                             'assets/person.png',
                             fit: BoxFit.fill,
-                            height: 12.h,
-                            width: 12.h,
+                            height: 40,
+                            width: 40,
                           ),
                         ),
                         const SizedBox(
@@ -136,7 +135,7 @@ class _DriverRateState extends State<DriverRate> {
               ),
               buttons: [
                 DialogButton(
-                  width: 65.w,
+                  width: 100,
                   radius: const BorderRadius.all(Radius.circular(30)),
                   onPressed: () {},
                   child: const Text(

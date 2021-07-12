@@ -2,8 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:shahen/stateless/app_localization.dart';
 import 'package:shahen/stateful/my_orders.dart';
+import 'package:shahen/stateful/rate.dart';
+import 'package:shahen/stateless/applocalization.dart';
 
 void main() {
   runApp(MyApp());
@@ -32,7 +33,7 @@ class _MyAppState extends State<MyApp> {
         Locale('ar'),
         Locale('en'),
       ],
-      localizationsDelegates: const [
+      localizationsDelegates: [
         AppLocalization.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
@@ -46,7 +47,7 @@ class _MyAppState extends State<MyApp> {
           return supportedLocales.first;
         }
       },
-      home: const MyOrders(),
+      home: const DriverRate(),
     );
   }
 }

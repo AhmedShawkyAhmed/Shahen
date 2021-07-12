@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shahen/stateless/app_localization.dart';
+import 'package:shahen/stateless/applocalization.dart';
 import 'package:shahen/colors.dart';
 import 'package:shahen/stateless/my_orders_item.dart';
 
@@ -34,23 +34,23 @@ class _MyOrdersState extends State<MyOrders> {
         showUnselectedLabels: true,
         items: [
           BottomNavigationBarItem(
-            icon:  Image.asset('assets/images/frontal-truck.png'),
+            icon:  Image.asset('assets/frontal-truck.png'),
             label: '${lang!.translate('main')}',
           ),
           BottomNavigationBarItem(
-            icon:  Image.asset('assets/images/order.png'),
+            icon:  Image.asset('assets/order.png'),
             label: '${lang.translate('my_orders')}',
           ),
           BottomNavigationBarItem(
-            icon:  Image.asset('assets/images/notification.png'),
+            icon:  Image.asset('assets/notification.png'),
               label: '${lang.translate('notifications')}',
           ),
           BottomNavigationBarItem(
-            icon:  Image.asset('assets/images/male.png'),
+            icon:  Image.asset('assets/male.png'),
             label: '${lang.translate('account')}',
           ),
           BottomNavigationBarItem(
-            icon:  Image.asset('assets/images/settings.png'),
+            icon:  Image.asset('assets/settings.png'),
             label: '${lang.translate('settings')}',
           ),
         ],

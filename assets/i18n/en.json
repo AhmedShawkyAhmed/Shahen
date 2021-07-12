@@ -236,7 +236,26 @@
   "receiver_name":"Receiver's name",
   "receiver_phone":"Receiver's Phone",
   "request_cost":"Request cost",
-  "receiver": "I'm the receiver"
+  "receiver": "I'm the receiver",
+
+  "main":"Main",
+  "my_orders":"My Orders",
+  "notifications":"Notifications",
+  "account":"Account",
+  "settings":"Settings",
+  "order_number":"Order Number 17256",
+  "from":"From",
+  "cairo":"Cairo",
+  "yesterday": "Yesterday",
+  "to": "To",
+  "ismailia": "Ismailia",
+  "time": "Time",
+  "two_hours": "Two Hours",
+  "truck": "Truck",
+  "food_delivery": "Food Delivery",
+  "order_cost": "Order Cost",
+  "price": "200 \\$",
+  "waiting": "Waiting"
 
 
 }

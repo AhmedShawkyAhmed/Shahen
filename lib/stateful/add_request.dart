@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shahen/colors.dart';
 import 'package:shahen/stateful/components.dart';
-import 'package:shahen/stateless/appLocalization.dart';
+import 'package:shahen/stateless/applocalization.dart';
 import 'package:sizer/sizer.dart';
 
 class addRequest extends StatefulWidget {

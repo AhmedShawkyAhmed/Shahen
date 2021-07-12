@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:shahen/stateless/app_localization.dart';
+import 'package:shahen/stateless/applocalization.dart';
 import 'package:shahen/colors.dart';
 
 class MyOrdersItem extends StatelessWidget {
@@ -51,7 +51,7 @@ class MyOrdersItem extends StatelessWidget {
                                 padding: EdgeInsets.symmetric(vertical: 8.0),
                                 child: Image(
                                     image: AssetImage(
-                                        'assets/images/gps-fixed-indicator.png')),
+                                        'assets/gps-fixed-indicator.png')),
                               ),
                               const SizedBox(
                                 width: 4.0,
@@ -98,7 +98,7 @@ class MyOrdersItem extends StatelessWidget {
                                 padding: EdgeInsets.symmetric(vertical: 8.0),
                                 child: Image(
                                     image: AssetImage(
-                                        'assets/images/placeholder.png')),
+                                        'assets/placeholder.png')),
                               ),
                               const SizedBox(
                                 width: 4.0,
@@ -143,7 +143,7 @@ class MyOrdersItem extends StatelessWidget {
                                 padding: EdgeInsets.symmetric(vertical: 8.0),
                                 child: Image(
                                     image: AssetImage(
-                                        'assets/images/clock-circular-outline.png')),
+                                        'assets/clock-circular-outline.png')),
                               ),
                               const SizedBox(
                                 width: 4.0,
@@ -188,7 +188,7 @@ class MyOrdersItem extends StatelessWidget {
                                 padding: EdgeInsets.symmetric(vertical: 8.0),
                                 child: Image(
                                     image: AssetImage(
-                                        'assets/images/delivery-truck.png')),
+                                        'assets/delivery-truck.png')),
                               ),
                               const SizedBox(
                                 width: 4.0,
@@ -234,7 +234,7 @@ class MyOrdersItem extends StatelessWidget {
                                 padding: EdgeInsets.symmetric(vertical: 8.0),
                                 child: Image(
                                     image: AssetImage(
-                                        'assets/images/money-bag.png')),
+                                        'assets/money-bag.png')),
                               ),
                               const SizedBox(
                                 width: 4.0,

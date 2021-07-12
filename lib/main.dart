@@ -24,6 +24,7 @@ class _MyAppState extends State<MyApp> {
         statusBarColor: Colors.white,
         statusBarBrightness: Brightness.dark,
         statusBarIconBrightness: Brightness.dark));
+<<<<<<< HEAD
     return Sizer(builder:
         (BuildContext context, Orientation orientation, DeviceType deviceType) {
       return MaterialApp(
@@ -49,6 +50,29 @@ class _MyAppState extends State<MyApp> {
               return supportedLocale;
             }
             return supportedLocales.first;
+=======
+    return MaterialApp(
+      title: 'Flutter Demoo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        fontFamily: 'Careem',
+        scaffoldBackgroundColor: Colors.white,
+      ),
+      supportedLocales: const [
+        Locale('ar'),
+        Locale('en'),
+      ],
+      localizationsDelegates: [
+        AppLocalization.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      localeResolutionCallback: (locale, supportedLocales) {
+        for (var supportedLocale in supportedLocales) {
+          if (supportedLocale.languageCode == locale!.languageCode &&
+              supportedLocale.countryCode == locale.countryCode) {
+            return supportedLocale;
+>>>>>>> ac52fd80342d1df04a6c78f33e739085ccf797b9
           }
         },
         home: addRequest(),

@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
         statusBarBrightness: Brightness.dark,
         statusBarIconBrightness: Brightness.dark));
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Demoo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: 'Careem',
